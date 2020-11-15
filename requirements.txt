@@ -1,2 +1,2 @@
-Pirogramma == 1.0.
+Pirogramma == 1.0.7
 TgCrypto == 1.2.2
