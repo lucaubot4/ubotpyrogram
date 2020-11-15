@@ -1,0 +1,71 @@
+{
+
+    "name": "ubotpyrogram",
+
+    "description": "https://telegram.dog/ubotpyrogram",
+
+    "keywords": [
+
+        "telegram",
+
+        "bot",
+
+        "open",
+
+        "source"
+
+    ],
+
+    "success_url": "https://telegram.dog/ubotpyrogram",
+
+    "website": "https://github.com/eyaadh/ubotpyrogram",
+
+    "repository": "https://github.com/eyaadh/ubotpyrogram",
+
+    "env": {
+
+        "ENV": {
+
+            "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
+
+            "value": "ANYTHING
+
+        },
+
+        "TG_APP_ID": {
+
+            "description": "Get this value from https://my.telegram.org",
+
+            "required": true
+
+        },
+
+        "TG_API_HASH": {
+
+            "description": "Get this value from https://my.telegram.org",
+
+            "required": true
+
+        }
+
+    },
+
+    "buildpacks": [{
+
+        "url": "heroku/python"
+
+    }],
+
+    "formation": {
+
+        "worker": {
+
+            "quantity": 1,
+
+            "size": "free"
+
+        }
+
+    }
+
+}
